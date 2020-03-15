@@ -9,7 +9,7 @@ all: $(patsubst %.dxf,%.jpg,$(wildcard *.dxf))
 all: $(patsubst %.txt,%.3d,$(wildcard *.txt))
 
 %.jpg: %.dxf
-	libreoffice --headless --convert-to jpg $<
+	dia $< -e $@
 
 %.svx: %.txt
 	caveconverter $< $@ p s lrud
