@@ -1,4 +1,7 @@
+*.3d
+*.err
 *.jpg
+*.log
 *.svg
 
 ashery-pot.svx
