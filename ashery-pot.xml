@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='us-ascii'?>
 
-<tunnelxml tunnelversion="version2017-09-28" tunnelproject="projectname" tunneluser="username" tunneldate="2020-07-19 17:38:36">
+<tunnelxml tunnelversion="version2017-09-28" tunnelproject="projectname" tunneluser="username" tunneldate="2020-07-20 17:26:17">
 <sketch splined="0" locoffsetx="-45.473553" locoffsety="44.683067" locoffsetz="-16.480858" realpaperscale="1.0">
 	<skpath from="0" to="1" linestyle="connective">
 		<pathcodes>
@@ -30041,6 +30041,22 @@
 		<sketchsubset subname="cyan"/>
 		<pt X="-838.86444" Y="-148.06934" Z="-87.89142"/>
 		<pt X="-847.3167" Y="-136.48506"/>
+	</skpath>
+	<skpath from="2476" to="2472" linestyle="connective">
+		<pathcodes>
+			<pctext style="default" nodeposxrel="0.0" nodeposyrel="1.0">?</pctext>
+		</pathcodes>
+		<sketchsubset subname="visiblesets"/>
+		<pt X="-917.86743" Y="-15.051432"/>
+		<pt X="-916.7536" Y="-18.927826"/>
+	</skpath>
+	<skpath from="2477" to="1735" linestyle="connective">
+		<pathcodes>
+			<pctext style="passage" nodeposxrel="-1.0" nodeposyrel="1.0">Straw&newline;Passage</pctext>
+		</pathcodes>
+		<sketchsubset subname="visiblesets"/>
+		<pt X="-657.3123" Y="36.38233"/>
+		<pt X="-670.6644" Y="48.23066" Z="-75.29142"/>
 	</skpath>
 </sketch>
 </tunnelxml>
