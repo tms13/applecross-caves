@@ -2,7 +2,7 @@
 
 
 
-CARD = /media/card/sd/Allt-Breagaireach
+CARD = /media/survey/Allt-Breagaireach
 
 all: $(patsubst %.dxf,%.jpg,$(wildcard *.dxf))
 all: $(patsubst %.txt,%.3d,$(wildcard *.txt))
