@@ -26,10 +26,10 @@ EXPORT_ARGS += --entrances
 %.kml: %.3d
 	~/survex/src/survexport --kml $(EXPORT_ARGS) $<
 
-upload:
+import:
 	cp -uv $(CARD)/*.txt $(CARD)/*.dxf .
 
 
 .DELETE_ON_ERROR:
-.PHONY: upload
+.PHONY: import
 .PRECIOUS: %.svx
