@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='us-ascii'?>
 
-<tunnelxml tunnelversion="version2017-09-28" tunnelproject="projectname" tunneluser="username" tunneldate="2020-10-01 20:23:16">
+<tunnelxml tunnelversion="version2017-09-28" tunnelproject="projectname" tunneluser="username" tunneldate="2020-10-03 19:54:30">
 <sketch splined="0" locoffsetx="-48.722206" locoffsety="43.73465" locoffsetz="-16.878986" realpaperscale="1.0">
 	<skpath from="0" to="1" linestyle="connective">
 		<pathcodes>
@@ -29396,7 +29396,7 @@
 		<pt X="-461.121" Y="-255.68263"/>
 		<pt X="-465.21695" Y="-255.80391"/>
 	</skpath>
-	<skpath from="1516" to="1644" linestyle="detail">
+	<skpath from="1516" to="1644" linestyle="wall" splined="1">
 		<sketchsubset subname="cyan"/>
 		<importfrom subname="ashery-pot"/>
 		<pt X="-455.57794" Y="-307.4535" Z="-96.41014"/>
