@@ -1,0 +1,9 @@
+
+*require 1.2.21
+
+*cs OSGB:NG
+*cs out OSGB:NG
+
+*declination auto 71605 43870 120
+
+*include ashery-pot.svx
