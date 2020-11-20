@@ -10,8 +10,12 @@ all: $(patsubst %.txt,%.3d,$(wildcard *.txt))
 %.jpg: %.dxf
 	dia $< -e $@
 
+CONVERT_ARGS = p s lrud
+
 %.svx: %.txt
-	caveconverter $< $@ p s lrud
+	caveconverter $< $@ $(CONVERT_ARGS)
+
+surface2.svx: CONVERT_ARGS = p s
 
 %.3d: %.svx
 	cavern -q $< >$(patsubst %.3d,%.log,$@)
