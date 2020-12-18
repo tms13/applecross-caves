@@ -31,6 +31,9 @@ EXPORT_ARGS += --entrances
 	~/survex/src/survexport --kml $(EXPORT_ARGS) $<
 
 import:
+	if ! test -d $(CARD);								\
+	then pmount -r /dev/disk/by-label/survey survey && trap 'pumount survey' EXIT;	\
+	fi;										\
 	cp -uv $(CARD)/*.txt $(CARD)/*.dxf .
 
 
