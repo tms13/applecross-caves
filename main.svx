@@ -1,0 +1,51 @@
+*require 1.2.21
+
+*cs OSGB:NG
+*cs out OSGB:NG
+
+*declination auto 71777 43786 130
+
+*title "Allt Breagach"
+
+*sd tape 0.05 metres
+*sd clino 2 degrees
+*sd compass 2 degrees
+
+
+*begin
+*flags surface
+*include surface2.svx
+*end
+
+*include flake-pot/flake-pot.svx
+*entrance flake-pot-ent
+*fix flake-pot-ent   71669 43811 95   10 20
+*equate flake-pot-ent surface2.1.0 flake-pot.1.0
+
+*entrance marmite-pot
+*equate marmite-pot surface2.1.7a
+
+*include uamh-breagair/uamh-breagair.svx
+*entrance uamh-a-bhreugadair
+*equate uamh-a-bhreugadair uamh-breagair.300.55 liars-sink.1701d.026
+*entrance jawbone-passage
+*equate jawbone-passage surface2.1.15 uamh-breagair.1.15 liars-sink.1701d.033
+
+*begin liars-sink
+*include ../liars-sink/main-tunnel.svx
+*end liars-sink
+*entrance slot-dig
+*equate slot-dig liars-sink.1701d.032
+
+*entrance poll-breagair
+*equate poll-breagair liars-sink.1701d.000
+
+*entrance flood-cave
+*equate flood-cave liars-sink.1704a.0 liars-sink.1705a.002
+
+*include ashery-pot/ashery-pot.svx
+*entrance bovril-corner         ; Ashery Pot entrance
+*equate bovril-corner surface2.1.10a ashery-pot.100.0
+*entrance yeaster-pot
+*equate yeaster-pot ashery-pot.113.2
+
