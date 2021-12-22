@@ -32,12 +32,13 @@ EXPORT_ARGS += --entrances
 	~/survex/src/survexport --kml $(EXPORT_ARGS) $<
 
 import:
-	set -e;										\
+	@set -eu;									\
 	if ! test -d $(CARD);								\
 	then pmount -r /dev/disk/by-label/survey survey && trap 'pumount survey' EXIT;	\
 	fi;										\
-	for i in ashery-pot flake-pot uamh-breagair;					\
-	do cp -uv $(CARD)/$$i.txt $(CARD)/$$i?.dxf $$i/;				\
+	echo Copying from survey card...;						\
+	for i in ashery-pot flake-pot uamh-breagair brindles-rift;			\
+	do cp -uv $(CARD)/$$i.top $(CARD)/$$i.txt $(CARD)/$$i?.dxf $$i/;		\
 	done
 
 clean:
