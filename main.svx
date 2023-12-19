@@ -14,7 +14,7 @@
 
 *begin
 *flags surface
-*include surface2.svx
+*include surface2/surface2.svx
 *end
 
 *include flake-pot/flake-pot.svx
@@ -53,3 +53,7 @@
 *entrance brindles-rift.entrance
 *fix brindles-rift.entrance 71853 44310 95   10 20
 *equate brindles-rift.entrance brindles-rift.220.0
+
+*include the-gills/the-gills.svx
+*entrance the-gills.0
+*equate the-gills.0 the-gills.211.0 surface2.4.5
