@@ -49,3 +49,7 @@
 *entrance yeaster-pot
 *equate yeaster-pot ashery-pot.113.2
 
+*include brindles-rift/brindles-rift.svx
+*entrance brindles-rift.entrance
+*fix brindles-rift.entrance 71853 44310 95   10 20
+*equate brindles-rift.entrance brindles-rift.220.0
